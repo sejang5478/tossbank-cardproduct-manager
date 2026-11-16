@@ -560,3 +560,11 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; }
 .idea.short p { font-size: 15px; color: var(--g700); }
 @media (max-width: 640px) { .role { font-size: 13px; } .role::before { margin: 0 8px 0 0; } .doc-head h1 { font-size: 28px; } .toc.two { grid-template-columns: 1fr; } }
 @media print { .doc-head h1 { font-size: 18pt; } .toc.two { grid-template-columns: repeat(2, 1fr); } }
+.flow.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.stat { background: var(--paper); border-radius: 18px; padding: 20px 24px; display: grid; gap: 6px; }
+.stat b { font-size: 28px; color: var(--blue-d); font-variant-numeric: tabular-nums; }
+.stat span { color: var(--g700); font-size: 15px; }
+.stat small { color: var(--g500); font-size: 13px; }
+@media (max-width: 640px) { .flow.three { grid-template-columns: 1fr; } }
+@media print { .flow.three { grid-template-columns: repeat(3, 1fr); } }
+#s-idea .flow li, #s-idea .stat { background: var(--g50); }

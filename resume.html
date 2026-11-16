@@ -53,7 +53,7 @@
       <a href="#p1"><span class="no">2-1 · 운영 · 카드 상품</span><b>카드 상품 혜택 운영</b><span class="k">BIN · 상품코드 · 혜택 가맹점번호</span></a>
       <a href="#p4"><span class="no">2-2 · 출시</span><b>정부 바우처 결제</b><span class="k">6개 카드사 전부 오픈</span></a>
       <a href="#p3"><span class="no">2-3 · 출시</span><b>은행 선불전자지급수단 도입</b><span class="k">월 약 250억 원 거래</span></a>
-      <a href="#p2"><span class="no">2-4 · 고도화 · PM</span><b>매입 VAN 이원화</b><span class="k">월 약 8,000억 원 무중단</span></a>
+      <a href="#p2"><span class="no">2-4 · 고도화 · PM</span><b>매입 VAN 다중화</b><span class="k">월 약 8,000억 원 무중단</span></a>
       <a href="#p5"><span class="no">2-5 · 출시 · 협의</span><b>게임 · 상품권 업종과 한도</b><span class="k">일 한도 20배</span></a>
       <a href="#p6"><span class="no">2-6 · 출시</span><b>수입 신차 계약금 결제</b><span class="k">혜택이 붙으면 안 되는 업종</span></a>
       <a href="#p10"><span class="no">2-7 · 데이터</span><b>SQL로 정산 데이터 분석</b><span class="k">반송 원인 추적</span></a>
@@ -112,10 +112,10 @@
     <article class="pj" id="p2">
       <div class="pj-l"><span class="no">2-4</span><span class="kind plan">고도화 · PM</span></div>
       <div class="pj-r">
-        <h3>한 곳에 묶여 있던 매입 VAN을, 매입을 멈추지 않고 이원화했습니다</h3>
+        <h3>한 곳에 묶여 있던 매입 VAN을, 매입을 멈추지 않고 다중화했습니다</h3>
         <dl class="bgts">
-          <div><dt>배경</dt><dd>매입 VAN이 한 곳뿐이라, 그 VAN사에 장애가 나면 매입 전체가 멈추는 구조였습니다. 매입이 멈추면 정산도 밀리기 때문에 이원화가 필요했습니다.</dd></div>
-          <div><dt>목표</dt><dd>거래 안정성을 높이기 위해, 월 약 8,000억 원 규모의 매입을 중단 없이 이원화</dd></div>
+          <div><dt>배경</dt><dd>매입 VAN이 한 곳뿐이라, 그 VAN사에 장애가 나면 매입 전체가 멈추는 구조였습니다. 매입이 멈추면 정산도 밀리기 때문에 다중화가 필요했습니다.</dd></div>
+          <div><dt>목표</dt><dd>거래 안정성을 높이기 위해, 월 약 8,000억 원 규모의 매입을 중단 없이 다중화</dd></div>
           <div><dt>제 역할</dt><dd>PM. 연동 스펙 작성, 협력사 협의, 개발 범위와 일정 조율, 테스트 케이스 설계, 전환까지 맡았습니다.</dd></div>
           <div><dt>한 일</dt><dd><ul><li><b>스펙</b> · 현행 매입 · 대사 프로세스를 정리해, 신규 VAN사와 처음 연동할 스펙을 직접 작성</li><li><b>협의</b> · 카드사 · VAN사 등 협력사와 스펙과 일정을 협의하고, 카드사 개발계 테스트가 막힌 제약은 직접 풀어 테스트 환경 확보</li><li><b>개발 범위</b> · 개발부서와 필요한 개발 범위와 일정을 함께 정하고, 일정에 맞춰 전환</li><li><b>엣지 케이스</b> · 전환 도중 생길 수 있는 예외 거래를 직접 구상해 기본 · 엣지 · 호환 케이스로 정형화하고, 테스트 케이스를 개발자와 함께 검토</li><li><b>수수료</b> · 매입결과파일에 건별 수수료 항목을 추가하도록 모든 VAN사가 같은 날 반영하게 조율</li></ul></dd></div>
           <div><dt>판단</dt><dd>위험은 정상 거래보다 전환일을 걸친 예외 거래에 있다고 봤습니다. 그래서 엣지 케이스부터 정의했고, VAN사 반영일은 가장 늦게 가능한 곳에 맞춰 하루로 정했습니다.</dd></div>
