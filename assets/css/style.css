@@ -548,3 +548,15 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; }
   .kicker.big { font-size: 19px; }
 }
 @media print { .top { display: block !important; position: static; } .top .nav, .top .btn-print { display: none !important; } .secno { height: 20px; min-width: 20px; font-size: 9pt; } .kicker.big { font-size: 12pt; } }
+
+/* 6차: 상단 이름·직무 통일, 제목 크기, 짧은 아이디어 카드, 2열 목차 */
+.role { background: none; color: var(--g700); font-weight: 500; font-size: 15px; padding: 0; border-radius: 0; }
+.role::before { content: ""; display: inline-block; width: 1px; height: 13px; background: var(--g300); margin: 0 12px 0 2px; vertical-align: -1px; }
+.hero h1.two { font-size: clamp(26px, 3.1vw, 36px); letter-spacing: -0.03em; }
+.doc-head h1 { font-size: 36px; }
+.toc.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.idea.short { gap: 10px; padding: 26px; }
+.idea.short h3 { font-size: 21px; }
+.idea.short p { font-size: 15px; color: var(--g700); }
+@media (max-width: 640px) { .role { font-size: 13px; } .role::before { margin: 0 8px 0 0; } .doc-head h1 { font-size: 28px; } .toc.two { grid-template-columns: 1fr; } }
+@media print { .doc-head h1 { font-size: 18pt; } .toc.two { grid-template-columns: repeat(2, 1fr); } }
