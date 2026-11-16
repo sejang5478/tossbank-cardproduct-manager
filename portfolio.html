@@ -66,7 +66,7 @@
           <div class="node" data-node="card"><i>카드사</i><span>카드사</span></div>
         </div>
         <div class="billing" data-node="sys"><i></i>내부 결제 시스템 · 어드민</div>
-        <div class="caption print-show" data-cap data-label="1-1 BIN · 상품코드 · 카드 이미지 플레이트"><h3>새 카드를 알아보고, 고객 화면에 맞게 보여 줍니다</h3><p>카드사가 새 카드의 BIN과 카드상품코드를 알려 오면 등록하고 관리합니다.<br>상품코드에 맞춰 네이버페이 화면에 카드 이미지 플레이트가 맞게 보이도록 등록합니다.</p></div>
+        <div class="caption print-show" data-cap data-label="1-1 BIN · 상품코드 · 카드 이미지 플레이트"><h3>새 카드를 알아보고, 고객 화면에 맞게 보여 줍니다</h3><p>카드사가 새 카드의 BIN(카드 번호 앞 6~8자리)과 카드상품코드를 알려 오면 등록하고 관리합니다.<br>상품코드에 맞춰 네이버페이 화면에 카드 이미지 플레이트가 맞게 보이도록 등록합니다.</p></div>
         <div class="caption print-show" data-cap data-label="1-2 가맹점 개설" hidden><h3>혜택을 적용할 가맹점을 엽니다</h3><p>카드사는 혜택 대상을 가맹점번호로 판단합니다.<br>혜택 적용에 쓸 카드 가맹점을 카드사에 개설합니다.</p></div>
         <div class="caption print-show" data-cap data-label="1-2 혜택 대상 · 어드민 등록" hidden><h3>받아야 할 결제와 빠져야 할 결제를 나눕니다</h3><p>혜택 대상을 관리하고, 개설한 가맹점번호를 내부 어드민에 등록해 대상 결제가 그 번호로 발생하게 합니다.</p></div>
         <div class="caption print-show" data-cap data-label="1-3 혜택이 적용된 결제" hidden><h3>고객은 맞는 카드를 보고, 약속된 혜택을 받습니다</h3><p>카드가 보이게, 혜택이 붙게 준비해 두면 고객은 맞는 카드를 보고 혜택을 받습니다.</p></div>
@@ -128,7 +128,7 @@
           <button type="button" role="tab" aria-selected="true" data-target="k1">게임 · 상품권</button>
           <button type="button" role="tab" aria-selected="false" data-target="k2">수입 신차 계약금</button>
           <button type="button" role="tab" aria-selected="false" data-target="k3">정부 바우처</button>
-          <button type="button" role="tab" aria-selected="false" data-target="k4">은행 선불전자지급수단</button>
+          <button type="button" role="tab" aria-selected="false" data-target="k4">삼성페이머니</button>
         </div>
         <div>
           <div class="verdict print-show" role="tabpanel" data-panel="k1" data-label="게임 · 상품권">
@@ -146,7 +146,7 @@
             <p class="to">→ 스펙을 먼저 고정하고 <b>6개 카드사 전부 오픈</b></p>
             <p class="note">법인카드라면 · 용도가 정해진 예산은 정산 뒤에 검사하기보다 카드에 조건으로 미리 넣어 두고 싶습니다.</p>
           </div>
-          <div class="verdict print-show" role="tabpanel" data-panel="k4" data-label="은행 선불전자지급수단" hidden>
+          <div class="verdict print-show" role="tabpanel" data-panel="k4" data-label="삼성페이머니 (선불전자지급수단)" hidden>
             <ol><li>운영 은행과 직접 연결되는 승인 구조</li><li>두 시스템을 잇는 연동 토큰</li><li>선불전자지급수단 결제의 문화비 소득공제 기준</li></ol>
             <p class="to">→ 카드와 같은 주문서 흐름으로 오픈, <b>월 약 250억 원 거래</b></p>
             <p class="note">법인카드라면 · 결제수단이 달라도 경비 내역과 증빙은 한곳에서 보이게 하는 게 중요하다고 봅니다.</p>
@@ -234,7 +234,7 @@
 
       <h3><span class="subno">6-4</span>가설과 첫 실험</h3>
       <dl class="bgts">
-        <div><dt>가설</dt><dd>거래처 대금을 법인카드로 낼 수 있으면, 기업은 결제일까지 자금 여유가 생기고 법인카드 이용액도 늘어납니다.</dd></div>
+        <div><dt>가설</dt><dd>거래처 대금을 법인카드로 낼 수 있으면, 기업은 결제 이력을 한곳에 쉽게 남기고 법인카드 이용액도 늘어납니다.</dd></div>
         <div><dt>첫 실험</dt><dd>토스뱅크 사업자 통장 고객 중 거래처 이체가 잦은 기업을 데이터로 찾아, 소수 기업에 먼저 열고 반복 이용률을 봅니다.</dd></div>
         <div><dt>지표</dt><dd>거래처 결제 반복 이용률, 법인카드 이용액, 연체율</dd></div>
         <div><dt>제 경험</dt><dd>카드 결제가 승인 · 매입 · 정산을 거쳐 돈이 오가는 구조를 다뤄 왔고, 새 업종과 결제수단을 열 때 카드사와 조건을 협의해 왔습니다.</dd></div>
