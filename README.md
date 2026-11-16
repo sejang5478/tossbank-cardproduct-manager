@@ -3,3 +3,4 @@
 - 홈: index.html
 - 이력서 및 경력기술서: resume.html
 - 포트폴리오: portfolio.html
+- 제출용 PDF: 장소은_이력서_경력기술서.pdf, 장소은_포트폴리오.pdf
