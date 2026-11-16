@@ -315,3 +315,32 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; font-weight: 700; }
   :root { --lab: 74pt; }
   .job, .bgts > div { column-gap: 12pt; }
 }
+
+/* 26차: 문서 이름 · 사진/글 두 칸 · 배경/목표/한 일/성과 구분 */
+.doc-label { font-size: var(--t2); font-weight: 700; color: var(--g900); padding-bottom: 12px; border-bottom: 2px solid var(--g900); }
+.profile { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 28px; align-items: center; }
+.profile img { width: 120px; height: 120px; }
+.profile > div { display: grid; gap: 2px; }
+.profile .lead { margin-top: 12px; }
+.job b, .job .sub { font-size: inherit; }
+.job b { font-size: var(--t3); }
+.job .sub { font-size: var(--tb); }
+.bgts { gap: 0; }
+.bgts > div { grid-template-columns: 64px minmax(0, 1fr); column-gap: 16px; padding: 12px 0 !important; border-top: 1px solid var(--g100) !important; align-items: start; }
+.bgts > div:first-child { border-top: 0 !important; padding-top: 4px !important; }
+.bgts dt { justify-self: start; font-size: 12px; font-weight: 700; color: var(--blue-d); background: var(--blue-w); border-radius: 6px; padding: 2px 8px; line-height: 1.6; margin-top: 2px; }
+@media (max-width: 640px) {
+  .profile { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .profile img { width: 88px; height: 88px; }
+  .bgts > div { grid-template-columns: minmax(0, 1fr); row-gap: 6px; }
+}
+@media print {
+  .doc-label { font-size: var(--t2); padding-bottom: 6pt; border-bottom-width: 1.5pt; }
+  .resume-page > .doc-label + * { margin-top: 12pt !important; }
+  .profile { gap: 16pt; }
+  .profile img { width: 82pt !important; height: 82pt !important; }
+  .profile .lead { margin-top: 6pt; }
+  .bgts > div { grid-template-columns: 40pt minmax(0, 1fr); column-gap: 10pt; padding: 5pt 0 !important; }
+  .bgts dt { font-size: 7.5pt !important; padding: 1pt 5pt; margin-top: 1pt; }
+  .career-part > .sec-h > .doc-label { margin-bottom: 8pt; }
+}
