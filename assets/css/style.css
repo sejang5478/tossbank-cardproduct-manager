@@ -385,3 +385,6 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; font-weight: 700; }
 }
 .contact-line { color: var(--g700) !important; margin-bottom: 4px; }
 .role-line { margin-top: 2px; }
+.doc-label { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.doc-role { font-size: var(--ts); font-weight: 600; color: var(--blue-d); }
+@media print { .doc-role { font-size: var(--ts) !important; } }
