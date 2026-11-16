@@ -45,10 +45,10 @@
     </div>
     <div class="band player rv d1" data-player>
       <div class="steps" role="tablist" aria-label="카드 상품 운영 단계">
-        <button type="button" role="tab" data-on="card pg app sys"><span class="n">1-1 카드가 보이게</span><b>BIN · 상품코드 · 카드 이미지 플레이트</b><span class="bar"></span></button>
+        <button type="button" role="tab" data-on="card pg app sys"><span class="n">1-1 카드가 보이게</span><b>BIN · 카드상품코드 · 카드 이미지 플레이트</b><span class="bar"></span></button>
         <button type="button" role="tab" data-on="card pg"><span class="n">1-2 혜택이 붙게</span><b>가맹점 개설</b><span class="bar"></span></button>
-        <button type="button" role="tab" data-on="pg sys"><span class="n">1-2 혜택이 붙게</span><b>혜택 대상 · 어드민 등록</b><span class="bar"></span></button>
-        <button type="button" role="tab" data-on="user app pg card sys"><span class="n">1-3 결제</span><b>혜택이 적용된 결제</b><span class="bar"></span></button>
+        <button type="button" role="tab" data-on="pg sys"><span class="n">1-3 혜택이 붙게</span><b>혜택 대상 · 어드민 등록</b><span class="bar"></span></button>
+        <button type="button" role="tab" data-on="user app pg card sys"><span class="n">1-4 결제</span><b>혜택이 적용된 결제</b><span class="bar"></span></button>
       </div>
       <div class="stage">
         <div class="nodes four" aria-hidden="true">
@@ -59,10 +59,10 @@
           <div class="node" data-node="card"><i>카드사</i><span>카드사</span></div>
         </div>
         <div class="billing" data-node="sys"><i></i>내부 결제 시스템 · 어드민</div>
-        <div class="caption print-show" data-cap data-label="1-1 BIN · 상품코드 · 카드 이미지 플레이트"><h3>새 카드를 알아보고, 고객 화면에 맞게 보여 줍니다</h3><p>카드사가 새 카드의 BIN(카드 번호 앞 6~8자리)과 카드상품코드를 알려 오면 등록하고 관리합니다.<br>상품코드에 맞춰 네이버페이 화면에 카드 이미지 플레이트가 맞게 보이도록 등록합니다.</p></div>
+        <div class="caption print-show" data-cap data-label="1-1 BIN · 카드상품코드 · 카드 이미지 플레이트"><h3>새 카드를 알아보고, 고객 화면에 맞게 보여 줍니다</h3><p>카드사가 새 카드의 BIN(카드 번호 앞 6~8자리)과 카드상품코드를 알려 오면 등록하고 관리합니다.<br>카드상품코드에 맞춰 네이버페이 화면에 카드 이미지 플레이트가 맞게 보이도록 등록합니다.</p></div>
         <div class="caption print-show" data-cap data-label="1-2 가맹점 개설" hidden><h3>혜택을 적용할 가맹점을 엽니다</h3><p>카드사는 혜택 대상을 가맹점번호로 판단합니다.<br>혜택 적용에 쓸 카드 가맹점을 카드사에 개설합니다.</p></div>
-        <div class="caption print-show" data-cap data-label="1-2 혜택 대상 · 어드민 등록" hidden><h3>받아야 할 결제와 빠져야 할 결제를 나눕니다</h3><p>혜택 대상을 관리하고, 개설한 가맹점번호를 내부 어드민에 등록해 대상 결제가 그 번호로 발생하게 합니다.</p></div>
-        <div class="caption print-show" data-cap data-label="1-3 혜택이 적용된 결제" hidden><h3>고객은 맞는 카드를 보고, 약속된 혜택을 받습니다</h3><p>카드가 보이게, 혜택이 붙게 준비해 두면 고객은 맞는 카드를 보고 혜택을 받습니다.</p></div>
+        <div class="caption print-show" data-cap data-label="1-3 혜택 대상 · 어드민 등록" hidden><h3>받아야 할 결제와 빠져야 할 결제를 나눕니다</h3><p>혜택 대상을 관리하고, 개설한 가맹점번호를 내부 어드민에 등록해 대상 결제가 그 번호로 발생하게 합니다.</p></div>
+        <div class="caption print-show" data-cap data-label="1-4 혜택이 적용된 결제" hidden><h3>고객은 맞는 카드를 보고, 약속된 혜택을 받습니다</h3><p>카드가 보이게, 혜택이 붙게 준비해 두면 고객은 맞는 카드를 보고 혜택을 받습니다.</p></div>
         <div class="ctrl"><button type="button" data-toggle>일시정지</button></div>
       </div>
     </div>
@@ -190,7 +190,7 @@
     </div>
     <div class="band panel-box rv d1">
       <h3><span class="subno">6-1</span>왜 필요한가</h3>
-      <div class="stat"><b>51%</b><span><strong>중견기업의 절반 이상이 B2B 결제에 카드를 거의 쓰지 않습니다.</strong><br>국내 거래처 대금을 줄 때 법인카드를 '전혀 사용하지 않거나 사용 비중이 10% 미만'이라고 답한 기업이 51%였습니다.<br>국내 거래에서 법인카드를 주력 결제 수단으로 쓰는 기업은 15%에 불과합니다.<br>응답 기업의 약 90%는 결제일까지 현금을 쓸 수 있는 법인카드의 결제유예 효과를 알고 있었습니다.</span><small>출처: 비자(Visa), 「2026 국내 중견기업 운전자본 실태조사」(2026.09 발표, 연 매출 500억 원 이상 기업 150곳) · <a href="https://www.etoday.co.kr/news/view/2623237">이투데이 보도</a></small></div>
+      <div class="stat"><b>51%</b><span><strong>중견기업의 절반 이상이 B2B 결제에 카드를 거의 쓰지 않습니다.</strong><br>국내 거래처 대금을 지급할 때 법인카드를 '전혀 사용하지 않거나 사용 비중이 10% 미만'이라고 답한 기업이 51%였습니다.<br>국내 거래에서 법인카드를 주력 결제 수단으로 쓰는 기업은 15%에 불과합니다.<br>응답 기업의 약 90%는 결제일까지 현금을 쓸 수 있는 법인카드의 결제유예 효과를 알고 있었습니다.</span><small>출처: 비자(Visa), 「2026 국내 중견기업 운전자본 실태조사」(2026.09 발표, 연 매출 500억 원 이상 기업 150곳) · <a href="https://www.etoday.co.kr/news/view/2623237">이투데이 보도</a></small></div>
 
       <h3><span class="subno">6-2</span>어떻게 동작하나</h3>
       <ol class="flow three">
