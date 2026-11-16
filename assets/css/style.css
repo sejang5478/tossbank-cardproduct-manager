@@ -568,3 +568,4 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; }
 @media (max-width: 640px) { .flow.three { grid-template-columns: 1fr; } }
 @media print { .flow.three { grid-template-columns: repeat(3, 1fr); } }
 #s-idea .flow li, #s-idea .stat { background: var(--g50); }
+.bgts dd ul.kpis li b { color: var(--blue-d); }
