@@ -372,3 +372,14 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; font-weight: 700; }
   .bgts > div { border-top-color: var(--g200) !important; }
   .doc-label { border-bottom-color: var(--g900); }
 }
+
+/* 32차: 포트폴리오 마무리를 마지막 장면 쪽 아래에 붙이기 */
+@media print {
+  #c6 .panel-box > * + * { margin-top: 6pt; }
+  #c6 .stat { padding: 7pt 9pt; }
+  #c6 .flow li { padding: 6pt 8pt; }
+  .end { margin-top: 12pt !important; gap: 3pt; padding: 0; }
+  .end .kicker { font-size: var(--ts); }
+  .end h2 { font-size: var(--t3) !important; line-height: 1.45; }
+  .end .mail { padding: 3pt 8pt; }
+}
