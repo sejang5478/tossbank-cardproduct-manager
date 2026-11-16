@@ -528,3 +528,23 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; }
 .ideas.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 640px) { .ideas.four { grid-template-columns: 1fr; } }
 @media print { .ideas.four { grid-template-columns: repeat(2, 1fr); } }
+
+/* 5차: 상단 직무명 고정, 사진 가운데, 번호 체계 */
+.brand { margin-right: 0; }
+.role { margin-right: auto; font-size: 14px; font-weight: 600; color: var(--blue-d); background: var(--blue-w); border-radius: 999px; padding: 5px 12px; white-space: nowrap; }
+.hero { align-items: center; }
+.hero h1.two { font-size: clamp(28px, 3.6vw, 40px); line-height: 1.4; }
+.hero h1.two span { display: block; }
+@media (min-width: 901px) { .hero h1.two span { white-space: nowrap; } }
+.me { min-width: 200px; }
+.me img, .profile img { clip-path: circle(47.5% at 50% 50%); }
+.secno { display: inline-grid; place-items: center; min-width: 30px; height: 30px; padding: 0 8px; border-radius: 9px; background: var(--blue); color: #fff; font-size: 15px; font-weight: 700; margin-right: 10px; font-variant-numeric: tabular-nums; vertical-align: 2px; }
+.kicker.big { font-size: 22px; color: var(--g900); display: flex; align-items: center; }
+.subno { font-weight: 700; color: var(--blue); margin-right: 6px; font-variant-numeric: tabular-nums; }
+@media (max-width: 640px) {
+  .top-in { flex-wrap: wrap; row-gap: 6px; }
+  .role { font-size: 12px; padding: 4px 10px; }
+  .nav { width: 100%; }
+  .kicker.big { font-size: 19px; }
+}
+@media print { .top { display: block !important; position: static; } .top .nav, .top .btn-print { display: none !important; } .secno { height: 20px; min-width: 20px; font-size: 9pt; } .kicker.big { font-size: 12pt; } }
