@@ -336,3 +336,5 @@ h1, h2, h3 { font-weight: 700; letter-spacing: -0.025em; text-wrap: balance; }
 @media print { .sec-h > .doc-label + * { margin-top: 10pt; } .sec-h > .doc-label { margin-bottom: 0; } }
 .kicker.big { flex-wrap: wrap; row-gap: 2px; }
 .kick-sub { font-size: var(--ts); font-weight: 500; color: var(--g500); margin-left: 4px; }
+.item b { display: block; font-size: var(--t3); }
+.item .sub { display: block; font-size: var(--tb); color: var(--g700); }
