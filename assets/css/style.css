@@ -569,3 +569,5 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; }
 @media print { .flow.three { grid-template-columns: repeat(3, 1fr); } }
 #s-idea .flow li, #s-idea .stat { background: var(--g50); }
 .bgts dd ul.kpis li b { color: var(--blue-d); }
+.end .closing { font-size: 15px; color: var(--g500); line-height: 1.7; }
+@media print { .end .closing { font-size: 9pt; } }
