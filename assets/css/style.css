@@ -353,3 +353,4 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; font-weight: 700; }
   .bgts > div { grid-template-columns: 50pt minmax(0, 1fr) !important; column-gap: 10pt !important; }
   .bgts dt { font-size: var(--ts) !important; margin-top: 1pt !important; }
 }
+@media print { .nodes, .billing { display: none !important; } .stage .caption:first-of-type { margin-top: 0; } }
