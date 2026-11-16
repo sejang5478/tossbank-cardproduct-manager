@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>장소은 | 포트폴리오</title>
-<meta name="description" content="장소은 포트폴리오. 카드 결제를 판단하는 방식과, 토스뱅크 법인카드에서 확인해 보고 싶은 가설">
+<meta name="description" content="장소은 포트폴리오. 카드 상품 운영과 결제 판단 방식, 토스뱅크 법인카드에서 확인해 보고 싶은 가설">
 <meta property="og:title" content="장소은 | 포트폴리오">
 <meta property="og:image" content="https://sejang5478.github.io/tossbank-cardproduct-manager/assets/img/profile.webp">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 32 32%22%3E%3Crect width=%2232%22 height=%2232%22 rx=%228%22 fill=%22%233182f6%22/%3E%3C/svg%3E">
@@ -16,8 +16,7 @@
   <a class="brand" href="index.html">장소은</a>
   <nav class="nav" aria-label="서류">
     <a href="index.html">홈</a>
-    <a href="resume.html">이력서</a>
-    <a href="career.html">경력기술서</a>
+    <a href="resume.html">이력서 · 경력기술서</a>
     <a href="portfolio.html" aria-current="page">포트폴리오</a>
   </nav>
   <button class="btn-print" type="button" data-print>PDF 저장</button>
@@ -25,22 +24,103 @@
 
 <main class="wrap">
   <section class="doc-head">
-    <p class="kicker">지원 서류 03 · 포트폴리오</p>
+    <p class="kicker">지원 서류 02 · 포트폴리오</p>
     <h1>제가 판단하는 방식과,<br>토스뱅크에서 해 보고 싶은 것</h1>
-    <p class="lead">네 장면은 해 온 일이고, 마지막 장면은 해 보고 싶은 일입니다. 장면마다 법인카드라면 어떻게 이어질지 함께 적었습니다.</p>
-    <nav class="cases five" aria-label="장면">
-      <a href="#c1"><span class="no">01 · 업종</span>카드사가 볼 것을 먼저</a>
-      <a href="#c2"><span class="no">02 · 한도</span>거절에 근거로 답하기</a>
-      <a href="#c3"><span class="no">03 · 매입</span>멈추지 않는 전환</a>
-      <a href="#c4"><span class="no">04 · 자동화</span>한 번 입력, 여러 서류</a>
-      <a href="#c5"><span class="no">05 · 제안</span>법인카드 가설 세 가지</a>
+    <p class="lead">다섯 장면은 해 온 일이고, 마지막 장면은 해 보고 싶은 일입니다. 장면마다 법인카드라면 어떻게 이어질지 함께 적었습니다.</p>
+    <nav class="cases six" aria-label="장면">
+      <a href="#c1"><span class="no">01 · 카드 상품</span>새 카드가 고객에게 닿기까지</a>
+      <a href="#c2"><span class="no">02 · 매입 이원화</span>멈추지 않는 전환</a>
+      <a href="#c3"><span class="no">03 · 업종</span>카드사가 볼 것을 먼저</a>
+      <a href="#c4"><span class="no">04 · 한도</span>거절에 근거로 답하기</a>
+      <a href="#c5"><span class="no">05 · 자동화</span>한 번 입력, 여러 서류</a>
+      <a href="#c6"><span class="no">06 · 제안</span>법인카드 가설 세 가지</a>
     </nav>
   </section>
 
   <!-- 01 -->
-  <section class="case" id="c1" data-dot="업종">
+  <section class="case" id="c1" data-dot="카드 상품">
     <div class="case-h rv">
-      <p class="no">01 · 업종별 카드사 기준</p>
+      <p class="no">01 · 카드 상품 혜택 운영</p>
+      <h2>새 카드 상품이 고객 화면에 보이고,<br>혜택까지 적용되기까지</h2>
+      <p class="lead">카드사 제휴 담당자와 함께 매달 해 온 일입니다. 단계를 누르면 그때 누가 함께 움직이는지 보입니다.</p>
+    </div>
+    <div class="band player rv d1" data-player>
+      <div class="steps" role="tablist" aria-label="카드 상품 운영 단계">
+        <button type="button" role="tab" data-on="card pg sys"><span class="n">1단계 · 매달</span><b>BIN 등록</b><span class="bar"></span></button>
+        <button type="button" role="tab" data-on="card pg app"><span class="n">2단계</span><b>상품코드 · 플레이트</b><span class="bar"></span></button>
+        <button type="button" role="tab" data-on="card pg"><span class="n">3단계</span><b>가맹점번호 채번</b><span class="bar"></span></button>
+        <button type="button" role="tab" data-on="pg sys"><span class="n">4단계</span><b>혜택 대상 · 어드민 등록</b><span class="bar"></span></button>
+        <button type="button" role="tab" data-on="user app pg card sys"><span class="n">5단계</span><b>혜택이 적용된 결제</b><span class="bar"></span></button>
+      </div>
+      <div class="stage">
+        <div class="nodes four" aria-hidden="true">
+          <span class="rail"></span>
+          <div class="node" data-node="user"><i>고객</i><span>고객</span></div>
+          <div class="node" data-node="app"><i>화면</i><span>결제 화면</span></div>
+          <div class="node mine" data-node="pg"><i>운영</i><span>제 담당</span></div>
+          <div class="node" data-node="card"><i>카드사</i><span>제휴 담당자</span></div>
+        </div>
+        <div class="billing" data-node="sys"><i></i>내부 결제 시스템 · 어드민</div>
+        <div class="caption print-show" data-cap data-label="1단계 BIN 등록"><h3>어떤 카드인지 알아보는 첫 단서를 매달 등록합니다</h3><p>카드사가 새 BIN을 알려 오면 등록하고 관리합니다. 이게 맞아야 결제 때 카드 상품이 제대로 식별됩니다.</p></div>
+        <div class="caption print-show" data-cap data-label="2단계 상품코드 · 플레이트" hidden><h3>고객이 보는 카드가 실제 카드와 같게 합니다</h3><p>카드사가 주는 카드상품코드에 맞춰, 네이버페이 화면에 카드 플레이트가 맞게 보이도록 등록 · 관리합니다.</p></div>
+        <div class="caption print-show" data-cap data-label="3단계 가맹점번호 채번" hidden><h3>혜택을 적용할 결제의 번호를 받습니다</h3><p>카드사는 혜택 대상을 가맹점번호로 판단합니다. 혜택 적용에 쓸 카드 가맹점번호를 카드사에서 채번합니다.</p></div>
+        <div class="caption print-show" data-cap data-label="4단계 혜택 대상 · 어드민 등록" hidden><h3>받아야 할 결제와 빠져야 할 결제를 나눕니다</h3><p>혜택 대상을 관리하고, 채번한 가맹점번호를 내부 어드민에 등록해 대상 결제가 그 번호로 발생하게 합니다.</p></div>
+        <div class="caption print-show" data-cap data-label="5단계 혜택이 적용된 결제" hidden><h3>고객은 맞는 카드를 보고, 약속된 혜택을 받습니다</h3><p>네 단계가 모두 맞아야 고객 화면과 결제, 카드사 혜택이 하나로 이어집니다.</p></div>
+        <div class="ctrl"><button type="button" data-toggle>일시정지</button></div>
+      </div>
+    </div>
+    <p class="learn rv"><b>배운 점</b>카드 상품의 약속은 결제 화면과 가맹점번호 위에서 지켜집니다. 법인카드를 만들 때도, 출시 뒤 결제 현장에서 무엇이 맞아야 하는지부터 챙기겠습니다.</p>
+  </section>
+
+  <!-- 02 -->
+  <section class="case" id="c2" data-dot="매입" data-tab-scope>
+    <div class="case-h rv">
+      <p class="no">02 · 매입 VAN 이원화 · PM</p>
+      <h2>한 곳에 묶인 매입 경로를,<br>멈추지 않고 둘로 나눴습니다</h2>
+      <p class="lead">카드 결제는 승인으로 끝나지 않습니다. 매입이 잘 돼야 정산까지 문제가 없습니다.</p>
+    </div>
+    <div class="story rv d1">
+      <div><b>상황</b>매입 VAN이 한 곳으로 일원화돼 있어, 그 경로에 문제가 생기면 매입 전체가 흔들릴 수 있었습니다.</div>
+      <div><b>목표</b>거래 안정성을 위해 월 약 8,000억 원 규모의 매입을, 중단 없이 이원화하는 것이었습니다.</div>
+      <div><b>제 역할</b>PM으로 스펙 작성부터 협력사 협의, 개발 범위와 일정, 엣지 케이스와 테스트, 전환까지 맡았습니다.</div>
+      <div><b>바뀐 것</b>매입을 중단 없이 전환했고, 수수료를 거래 단위로 받아 정산 대사 기반을 만들었습니다.</div>
+    </div>
+    <div class="band panel-box rv d2" style="padding:32px">
+      <h3>PM으로 진행한 순서</h3>
+      <ol class="flow five">
+        <li><span class="s">1</span><b>연동 스펙 작성</b>현행 매입 · 대사를 정리해 처음 연동할 스펙 작성</li>
+        <li><span class="s">2</span><b>협력사 협의</b>카드사 · VAN사와 스펙과 일정 협의</li>
+        <li><span class="s">3</span><b>개발 범위 · 일정</b>개발부서와 필요한 범위와 일정 확정</li>
+        <li><span class="s">4</span><b>엣지 케이스 · 테스트</b>예외 거래를 정형화하고 개발자와 함께 검토</li>
+        <li><span class="s">5</span><b>전환</b>일정에 맞춰 전환하고 모니터링</li>
+      </ol>
+      <h3>직접 구상해 정형화한 테스트 케이스</h3>
+      <div class="edge">
+        <div><h4>기본</h4><ul><li>신규 경로 정상 매입</li><li>정상 취소</li><li>매입결과파일 수신과 대사</li></ul></div>
+        <div><h4>엣지</h4><ul><li>전환일을 걸쳐 매입과 취소가 서로 다른 VAN사에서 처리되는 거래</li><li>전환일을 걸친 부분취소</li></ul></div>
+        <div><h4>호환</h4><ul><li>기존 · 신규 VAN사 파일 형식</li><li>건별 기본 · 제휴 수수료 항목</li></ul></div>
+      </div>
+      <p class="note">케이스를 유형으로 묶어 보여 드린 것입니다. 테스트 중 결과파일에서 제휴 수수료가 빠지는 문제를 이 케이스로 오픈 전에 잡았습니다.</p>
+      <h3>가장 어려웠던 두 가지</h3>
+      <div class="tabs" role="tablist" data-tabs>
+        <button type="button" role="tab" aria-selected="true" data-target="w1">테스트 환경</button>
+        <button type="button" role="tab" aria-selected="false" data-target="w2">수수료 항목</button>
+      </div>
+      <dl class="sca print-show" role="tabpanel" data-panel="w1" data-label="테스트 환경"><dt>과제</dt><dd>카드사 개발계 구간까지 통신 테스트를 할 수 없었습니다.</dd><dt>조치</dt><dd>카드사와 직접 협의해 개발계 구간까지 테스트할 환경을 확보했습니다.</dd></dl>
+      <dl class="sca print-show" role="tabpanel" data-panel="w2" data-label="수수료 항목" hidden><dt>과제</dt><dd>수수료를 총합으로만 받아 거래 단위 대사가 어려웠고, 항목을 추가하려면 모든 VAN사가 같은 날 반영해야 했습니다.</dd><dt>조치</dt><dd>매입결과파일에 건별 수수료 항목을 요청하고, 가장 늦게 가능한 곳을 기준으로 반영일을 하루로 맞췄습니다.</dd></dl>
+    </div>
+    <div class="nums rv">
+      <div class="num"><b>월 약 8,000억 원</b><span>중단 없이 전환한 매입 규모</span></div>
+      <div class="num"><b>건별 수수료</b><span>거래 단위 정산 대사 기반</span></div>
+      <div class="num"><b>PM 기여도 80%</b><span>스펙 · 협의 · 일정 · 테스트 총괄</span></div>
+    </div>
+    <p class="learn rv"><b>배운 점</b>전환의 위험은 예외 거래에 있습니다. 법인카드 경비 내역도 취소와 부분취소까지 맞아야 기업이 믿고 씁니다.</p>
+  </section>
+
+  <!-- 03 -->
+  <section class="case" id="c3" data-dot="업종">
+    <div class="case-h rv">
+      <p class="no">03 · 업종별 카드사 기준</p>
       <h2>업종을 보면, 카드사가<br>무엇을 확인할지 먼저 압니다</h2>
       <p class="lead">새 결제를 열 때마다 업종이 달랐고, 업종마다 카드사가 보는 기준이 달랐습니다. 업종을 눌러 보세요.</p>
     </div>
@@ -51,7 +131,6 @@
           <button type="button" role="tab" aria-selected="false" data-target="k2">수입 신차 계약금</button>
           <button type="button" role="tab" aria-selected="false" data-target="k3">정부 바우처</button>
           <button type="button" role="tab" aria-selected="false" data-target="k4">은행 선불 결제수단</button>
-          <button type="button" role="tab" aria-selected="false" data-target="k5">PLCC 혜택 매출</button>
         </div>
         <div>
           <div class="verdict print-show" role="tabpanel" data-panel="k1" data-label="게임 · 상품권">
@@ -74,11 +153,6 @@
             <p class="to">→ 카드와 같은 주문서 흐름으로 오픈, <b>월 약 250억 원 거래</b></p>
             <p class="note">법인카드라면 · 결제수단이 달라도 경비 내역과 증빙은 한곳에서 보이게 하는 게 중요하다고 봅니다.</p>
           </div>
-          <div class="verdict print-show" role="tabpanel" data-panel="k5" data-label="PLCC 혜택 매출" hidden>
-            <ol><li>카드사는 혜택 대상을 가맹점번호로 판단</li><li>간편결제사는 업종 · 서비스마다 가맹점번호가 여러 개</li><li>실제로 매출이 나는 번호가 무엇인지</li></ol>
-            <p class="to">→ 혜택 대상 범위를 정리해 <b>카드사와 협의 · 적용</b></p>
-            <p class="note">법인카드라면 · 캐시백이나 혜택을 약속할 때, 그 약속이 결제 데이터 위에서 지켜지는지부터 확인하겠습니다.</p>
-          </div>
         </div>
       </div>
       <p class="note">판단 순서를 보여 드리기 위해 줄인 예시입니다. 실제로는 같은 업종도 카드사마다 기준이 달라 카드사별로 확인합니다.</p>
@@ -86,10 +160,10 @@
     <p class="learn rv"><b>배운 점</b>카드사의 기준을 먼저 알면 협의가 빨라집니다. 법인카드에서는 이 기준이 곧 사용처와 한도 설계입니다.</p>
   </section>
 
-  <!-- 02 -->
-  <section class="case" id="c2" data-dot="한도">
+  <!-- 04 -->
+  <section class="case" id="c4" data-dot="한도">
     <div class="case-h rv">
-      <p class="no">02 · 게임 결제 한도 협의</p>
+      <p class="no">04 · 게임 결제 한도 협의</p>
       <h2>"기본 한도만 가능합니다"에<br>근거를 들고 다시 갔습니다</h2>
     </div>
     <div class="story rv d1">
@@ -108,41 +182,10 @@
     <p class="learn rv"><b>배운 점</b>거절은 대부분 근거를 더 달라는 요청이었습니다. 법인카드 한도도 기업의 거래 데이터로 설명할 수 있어야 고객과 은행이 함께 납득한다고 생각합니다.</p>
   </section>
 
-  <!-- 03 -->
-  <section class="case" id="c3" data-dot="매입" data-tab-scope>
+  <!-- 05 -->
+  <section class="case" id="c5" data-dot="자동화">
     <div class="case-h rv">
-      <p class="no">03 · 매입 VAN 다중화 · PM</p>
-      <h2>결제를 멈추지 않고,<br>매입 경로를 바꿨습니다</h2>
-      <p class="lead">카드 결제는 승인으로 끝나지 않습니다. 매입과 정산이 맞아야 대금이 정확히 오갑니다.</p>
-    </div>
-    <div class="story rv d1">
-      <div><b>상황</b>월 약 8,000억 원 규모의 매입을, 결제를 멈추지 않은 채 다중화 구조로 옮겨야 했습니다.</div>
-      <div><b>제가 본 것</b>위험은 기본 흐름보다, 전환일을 걸쳐 매입과 취소가 다른 VAN사에서 처리되는 거래에 있었습니다.</div>
-      <div><b>한 일</b>카드사 · VAN사 · 사내 개발의 범위와 일정을 PM으로 총괄하고, QA 시나리오를 직접 설계했습니다.</div>
-      <div><b>바뀐 것</b>매입을 중단 없이 전환했고, 수수료를 거래 단위로 받아 정산 대사 기반을 만들었습니다.</div>
-    </div>
-    <div class="band panel-box rv d2" style="padding:32px">
-      <ol class="flow four">
-        <li><span class="s">1</span><b>킥오프 · 연동 기획</b>현행 매입 · 대사 정리, 범위 확정</li>
-        <li><span class="s">2</span><b>QA 시나리오</b>기본 · 엣지 · 호환 케이스</li>
-        <li><span class="s">3</span><b>실거래 테스트</b>매입부터 차액정산까지</li>
-        <li><span class="s">4</span><b>운영 전환</b>신규 경로 운영과 모니터링</li>
-      </ol>
-      <h3>가장 어려웠던 두 가지</h3>
-      <div class="tabs" role="tablist" data-tabs>
-        <button type="button" role="tab" aria-selected="true" data-target="w1">테스트 환경</button>
-        <button type="button" role="tab" aria-selected="false" data-target="w2">수수료 항목</button>
-      </div>
-      <dl class="sca print-show" role="tabpanel" data-panel="w1" data-label="테스트 환경"><dt>과제</dt><dd>카드사 개발계 구간까지 통신 테스트를 할 수 없었습니다.</dd><dt>조치</dt><dd>카드사와 직접 협의해 개발계 구간까지 테스트할 환경을 확보했습니다.</dd></dl>
-      <dl class="sca print-show" role="tabpanel" data-panel="w2" data-label="수수료 항목" hidden><dt>과제</dt><dd>수수료를 총합으로만 받아 거래 단위 대사가 어려웠고, 항목을 추가하려면 모든 VAN사가 같은 날 반영해야 했습니다.</dd><dt>조치</dt><dd>매입결과파일에 건별 수수료 항목을 요청하고, 가장 늦게 가능한 곳을 기준으로 반영일을 하루로 맞췄습니다.</dd></dl>
-    </div>
-    <p class="learn rv"><b>배운 점</b>전환의 위험은 예외 거래에 있습니다. 법인카드 경비 내역도 취소와 부분취소까지 맞아야 기업이 믿고 씁니다.</p>
-  </section>
-
-  <!-- 04 -->
-  <section class="case" id="c4" data-dot="자동화">
-    <div class="case-h rv">
-      <p class="no">04 · 반복 업무 자동화</p>
+      <p class="no">05 · 반복 업무 자동화</p>
       <h2>양식은 달라도 정보는 같아서,<br>한 번만 입력하게 했습니다</h2>
       <p class="lead">카드사마다 다른 개설 서류를 매번 손으로 썼고, 오타 하나로 반려되기도 했습니다. 아래에서 동작 원리를 눌러 보세요.</p>
     </div>
@@ -167,43 +210,59 @@
     <p class="learn rv"><b>배운 점</b>기업 고객이 쓰는 서류도 결국 같은 정보의 반복입니다. 법인카드 발급 서류도 한 번 입력으로 끝나게 하고 싶습니다.</p>
   </section>
 
-  <!-- 05 -->
-  <section class="case" id="c5" data-dot="제안">
+  <!-- 06 -->
+  <section class="case" id="c6" data-dot="제안">
     <div class="case-h rv">
-      <p class="no">05 · 토스뱅크에서 해 보고 싶은 것</p>
-      <h2>법인카드의 번거로움에서<br>세 가지 가설을 세웠습니다</h2>
-      <p class="lead">밖에서 세운 가설이라 틀릴 수 있습니다. 그래서 가설마다 무엇으로 확인할지를 함께 적었습니다.</p>
+      <p class="no">06 · 토스뱅크에서 해 보고 싶은 것</p>
+      <h2>들어가면 만들고 싶은<br>법인카드 네 가지</h2>
+      <p class="lead">토스뱅크는 사업자 통장 · 금고 · 체크카드로 사업자 금융을 넓혀 가고 있습니다. 법인카드도 그 통장 위에서 시작할 수 있다고 보고, 임직원과 재무 담당자가 카드를 받고, 쓰고, 정산하는 순서대로 가설을 세웠습니다. 밖에서 세운 가설이라 틀릴 수 있어서, 무엇으로 확인할지를 함께 적었습니다.</p>
     </div>
-    <div class="band ideas rv d1" style="padding:28px">
-      <div class="idea"><span class="t">발급</span><h3>신청부터 첫 결제까지<br>짧은 법인카드</h3>
-        <dl><div><dt>불편</dt><dd>법인카드는 신청할 때 서류가 많고, 발급을 기다리는 동안 결제를 못 합니다.</dd></div>
-        <div><dt>가설</dt><dd>사업자 정보로 구비서류를 미리 채워 두면 신청 중간 이탈이 줄어듭니다.</dd></div>
-        <div><dt>첫 실험</dt><dd>미리 채운 신청서와 빈 신청서의 단계별 이탈을 비교합니다.</dd></div>
-        <div><dt>제 경험</dt><dd>카드사마다 다른 서류를 한 번 입력으로 만드는 도구를 만들었습니다.</dd></div></dl>
-        <p class="kpi">확인할 지표 · <b>신청 → 발급 완료 전환율, 발급 소요일</b></p></div>
-      <div class="idea"><span class="t">사용</span><h3>쓰면 안 되는 곳은<br>처음부터 막히는 카드</h3>
+    <div class="band ideas four rv d1" style="padding:28px">
+      <div class="idea"><span class="t">받기 · 발급</span><h3>서류 대신 통장으로 시작해,<br>발급 당일 바로 쓰는 법인카드</h3>
+        <dl><div><dt>불편</dt><dd>법인카드는 신청 서류가 많고, 업력이 짧은 기업은 재무 증빙이 부족해 신청부터 막힙니다. 실물 카드를 기다리는 동안 임직원은 개인카드로 먼저 결제하고, 그 건은 지출결의서를 따로 써야 합니다.</dd></div>
+        <div><dt>가설</dt><dd>토스뱅크 통장 정보로 서류를 대신 채우고, 모바일 카드 즉시 발급과 간편결제 등록을 출시 준비에 넣으면 첫 결제까지 걸리는 시간이 줄어듭니다.</dd></div>
+        <div><dt>첫 실험</dt><dd>신청부터 첫 결제까지의 소요일을 단계별로 쪼개, 가장 오래 걸리는 구간부터 줄입니다.</dd></div>
+        <div><dt>제 경험</dt><dd>카드사가 넘긴 BIN · 상품코드 · 플레이트를 간편결제 화면에 등록해 왔고, 카드사마다 다른 서류를 한 번 입력으로 만드는 도구를 만들었습니다.</dd></div></dl>
+        <p class="kpi">확인할 지표 · <b>신청 → 발급 완료 전환율, 신청 → 첫 결제 소요일</b></p></div>
+      <div class="idea"><span class="t">쓰기 · 사용처</span><h3>쓰면 안 되는 곳은<br>처음부터 막히는 카드</h3>
         <dl><div><dt>불편</dt><dd>사용 규정은 문서에 있고, 위반은 경비 정산 때 뒤늦게 발견됩니다.</dd></div>
-        <div><dt>가설</dt><dd>관리자가 업종 단위로 사용처를 켜고 끄면, 사후 소명과 반려가 줄어듭니다.</dd></div>
+        <div><dt>가설</dt><dd>관리자가 임직원별로 업종 사용처와 한도를 켜고 끄면, 사후 소명과 반려가 줄어듭니다.</dd></div>
         <div><dt>첫 실험</dt><dd>업종 제한을 켠 기업과 켜지 않은 기업의 반려 건수를 비교합니다.</dd></div>
-        <div><dt>제 경험</dt><dd>업종마다 다른 한도 · 인증 · 혜택 기준을 카드사별로 맞춰 왔습니다.</dd></div></dl>
+        <div><dt>제 경험</dt><dd>업종마다 다른 한도 · 인증 기준을 카드사와 협의했고, 조건이 붙은 바우처 결제를 6개 카드사에 반영했습니다.</dd></div></dl>
         <p class="kpi">확인할 지표 · <b>경비 반려 · 소명 요청 건수</b></p></div>
-      <div class="idea"><span class="t">관리</span><h3>취소까지 맞아떨어지는<br>경비 내역</h3>
+      <div class="idea"><span class="t">쓰기 · 혜택</span><h3>기업이 실제로 쓰는 곳부터<br>채우는 혜택 라인업</h3>
+        <dl><div><dt>불편</dt><dd>개인카드식 혜택은 기업이 실제로 돈을 쓰는 곳과 잘 맞지 않습니다.</dd></div>
+        <div><dt>가설</dt><dd>기업 지출이 몰리는 업종을 데이터로 찾아 혜택을 붙이면, 혜택이 실제로 쓰이는 비율이 오르고 라인업을 넓힐 근거가 생깁니다.</dd></div>
+        <div><dt>첫 실험</dt><dd>초기 고객의 결제 업종 분포를 SQL로 뽑아, 상위 업종에 혜택을 붙인 안과 아닌 안을 비교합니다.</dd></div>
+        <div><dt>제 경험</dt><dd>혜택 대상 가맹점번호를 채번하고, 받아야 할 결제와 빠져야 할 결제를 관리했습니다.</dd></div></dl>
+        <p class="kpi">확인할 지표 · <b>혜택 적용 결제 비중, 카드 활성 비율</b></p></div>
+      <div class="idea"><span class="t">정산 · 관리</span><h3>취소까지 맞아떨어지는<br>경비 내역</h3>
         <dl><div><dt>불편</dt><dd>승인 내역으로 경비를 올리면, 부분취소나 금액 차이로 월말에 다시 맞춰야 합니다.</dd></div>
         <div><dt>가설</dt><dd>매입 확정 기준으로 내역을 맞추고 취소를 자동 반영하면, 수정 작업이 줄어듭니다.</dd></div>
         <div><dt>첫 실험</dt><dd>승인 기준과 매입 기준 내역이 어긋나는 비율부터 측정합니다.</dd></div>
-        <div><dt>제 경험</dt><dd>매입 전환에서 전환일을 걸친 취소 · 부분취소를 직접 검증했습니다.</dd></div></dl>
+        <div><dt>제 경험</dt><dd>매입 이원화에서 전환일을 걸친 취소 · 부분취소를 직접 케이스로 만들어 검증했습니다.</dd></div></dl>
         <p class="kpi">확인할 지표 · <b>경비 내역 수정 건수, 월말 마감 소요일</b></p></div>
     </div>
-    <p class="honest rv"><b>아직 부족한 부분도 적어 둡니다.</b> 법인카드 상품을 직접 운영해 본 적은 없고, 감독 당국과 직접 소통해 본 경험도 적습니다. 카드 결제가 실제로 돌아가는 구조를 아는 것에서 시작해, 상품 쪽 지식은 빠르게 채우겠습니다.</p>
+    <div class="panel-box rv" style="padding:28px">
+      <h3>입사 후 첫 90일</h3>
+      <ol class="flow">
+        <li><span class="s">첫 달</span><b>상품과 규정 익히기</b>법인카드 상품 구조, 약관, 내부 규정과 데이터부터 기준표로 정리</li>
+        <li><span class="s">첫 달</span><b>고객 목소리 듣기</b>재무 담당자 · 임직원이 어디서 번거로워하는지 문의와 데이터로 확인</li>
+        <li><span class="s">둘째 달</span><b>출시 체크리스트</b>BIN · 상품코드 · 플레이트 · 가맹점 연동처럼 결제 현장에 넘길 것을 정리</li>
+        <li><span class="s">셋째 달</span><b>첫 가설 실험</b>네 가지 중 가장 근거가 많은 하나를 골라 기획 · QA · 운영까지</li>
+        <li><span class="s">그 뒤로</span><b>라인업 확장</b>실험 결과를 근거로 다음 상품과 혜택을 제안</li>
+      </ol>
+    </div>
+    <p class="honest rv"><b>아직 부족한 부분도 적어 둡니다.</b> 법인카드 상품을 직접 운영해 본 적은 없고, 감독 당국과 직접 소통해 본 경험도 적습니다. 카드 상품이 결제에서 돌아가는 구조를 매달 다뤄 본 것에서 시작해, 상품 쪽 지식은 빠르게 채우겠습니다.</p>
   </section>
 
   <section class="end rv">
-    <p class="kicker">마지막으로</p>
-    <h2>법인카드는 왜 이래야 할까,<br>그 질문을 함께 풀고 싶습니다.</h2>
+    <p class="kicker">읽어 주셔서 감사합니다</p>
+    <h2>새 카드가 나올 때마다 설렜던 마음으로,<br>토스뱅크의 법인카드를 처음부터 함께 만들고 싶습니다.</h2>
     <div class="mail"><code>thdms5478@naver.com</code><button type="button" data-copy="thdms5478@naver.com">이메일 복사</button></div>
   </section>
 
-  <nav class="pager" aria-label="서류 이동"><a href="career.html">← 경력기술서</a><a href="index.html">처음으로 · 홈 →</a></nav>
+  <nav class="pager" aria-label="서류 이동"><a href="resume.html">← 이력서 및 경력기술서</a><a href="index.html">처음으로 · 홈 →</a></nav>
 </main>
 <footer class="foot">© 2026 장소은</footer>
 <script src="assets/js/main.js"></script>

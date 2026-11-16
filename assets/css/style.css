@@ -511,3 +511,20 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; }
 }
 .cases.five { grid-template-columns: repeat(5, minmax(0, 1fr)); }
 @media (max-width: 900px) { .cases.five { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.docs.two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.cases.six { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.nodes.four { grid-template-columns: repeat(4, 1fr); }
+.nodes.four .rail { left: 12.5%; right: 12.5%; }
+.flow.five { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.edge { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.edge > div { background: var(--paper); border-radius: 16px; padding: 20px; display: grid; gap: 8px; align-content: start; }
+.edge h4 { font-size: 14px; color: var(--blue); }
+.edge ul { display: grid; gap: 6px; font-size: 15px; color: var(--g700); }
+.edge li { position: relative; padding-left: 14px; }
+.edge li::before { content: ""; position: absolute; left: 1px; top: .72em; width: 5px; height: 5px; border-radius: 50%; background: var(--g300); }
+@media (max-width: 900px) { .flow.five { grid-template-columns: repeat(2, minmax(0, 1fr)); } .edge { grid-template-columns: 1fr; } .cases.six { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .docs.two { grid-template-columns: 1fr; } }
+@media print { .docs.two { grid-template-columns: repeat(2, 1fr); } .flow.five { grid-template-columns: repeat(5, 1fr); } .edge { grid-template-columns: repeat(3, 1fr); } .edge > div { padding: 9pt; } }
+.ideas.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 640px) { .ideas.four { grid-template-columns: 1fr; } }
+@media print { .ideas.four { grid-template-columns: repeat(2, 1fr); } }
