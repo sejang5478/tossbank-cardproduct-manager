@@ -586,3 +586,32 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; }
   .idea-box .note { margin-top: 4pt; font-size: 8.5pt; color: var(--g500); }
 }
 @media print { .resume-head h1 { display: none; } }
+
+/* 22차: 이력서·경력기술서 분리, PDF 정적화 */
+.profile .role-line { font-size: 16px; font-weight: 600; color: var(--blue-d); margin-top: 2px; }
+.profile .contact-line { font-size: 14px; color: var(--g500); }
+.career-part > .sec-h > .kicker:first-child { font-size: 15px; }
+@media print {
+  .top { display: none !important; }
+  .resume-head h1 { display: block !important; font-size: 20pt; }
+  .profile img { width: 78px; height: 78px; }
+  .profile .role-line { font-size: 10pt; }
+  .profile .contact-line { font-size: 9pt; }
+  .career-part { break-before: page; }
+  .screen-only { display: none !important; }
+  .case { break-before: auto; }
+  #c6 { break-before: page; }
+  .form-card .t em { display: none; }
+}
+@media print {
+  .resume-page > * + * { margin-top: 11pt !important; }
+  .resume-page .career-part { margin-top: 0 !important; }
+  .resume-page .cover-h { font-size: 17pt; }
+  .resume-page .cover { padding-bottom: 7pt; }
+  .resume-page .job { padding: 6pt 0; }
+  .resume-page .grow-box, .resume-page .idea-box { margin-top: 6pt; padding: 7pt 11pt; }
+  #c6 { break-before: auto !important; }
+  .end { break-inside: avoid; }
+  .end .kicker { break-after: avoid; }
+}
+@media screen { .career-part { border-top: 2px solid var(--g100); padding-top: 48px; } }
