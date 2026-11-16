@@ -383,3 +383,5 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; font-weight: 700; }
   .end h2 { font-size: var(--t3) !important; line-height: 1.45; }
   .end .mail { padding: 3pt 8pt; }
 }
+.contact-line { color: var(--g700) !important; margin-bottom: 4px; }
+.role-line { margin-top: 2px; }
