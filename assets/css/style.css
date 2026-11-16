@@ -344,3 +344,12 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; font-weight: 700; }
   .bgts dt { font-size: 7.5pt !important; padding: 1pt 5pt; margin-top: 1pt; }
   .career-part > .sec-h > .doc-label { margin-bottom: 8pt; }
 }
+
+/* 29차: 이름표 배지 → 같은 너비 · 한 줄 · 파란 글씨 */
+.bgts > div { grid-template-columns: 88px minmax(0, 1fr) !important; column-gap: 20px !important; }
+.bgts dt { background: none !important; padding: 0 !important; border-radius: 0 !important; white-space: nowrap; font-size: var(--ts) !important; font-weight: 700; color: var(--blue) !important; margin-top: 3px !important; justify-self: stretch !important; }
+@media (max-width: 640px) { .bgts > div { grid-template-columns: minmax(0, 1fr) !important; } }
+@media print {
+  .bgts > div { grid-template-columns: 50pt minmax(0, 1fr) !important; column-gap: 10pt !important; }
+  .bgts dt { font-size: var(--ts) !important; margin-top: 1pt !important; }
+}
