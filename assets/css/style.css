@@ -300,3 +300,18 @@ h1, h2, h3 { letter-spacing: -0.025em; text-wrap: balance; font-weight: 700; }
   .bgts { gap: 3pt; }
   .bgts dd ul { gap: 1pt; }
 }
+
+/* 25차: 날짜 · 이름표는 같은 너비의 왼쪽 칸으로 (경력사항 · 경력기술서 공통) */
+:root { --lab: 150px; }
+.job { display: grid; grid-template-columns: var(--lab) minmax(0, 1fr); column-gap: 24px; align-items: baseline; }
+.job .when { margin: 0; font-size: var(--ts); }
+.bgts > div { display: grid; grid-template-columns: var(--lab) minmax(0, 1fr); column-gap: 24px; align-items: baseline; }
+.bgts dt { margin: 0; }
+.pj-r h3, .pj-l { margin-left: 0; }
+@media (max-width: 640px) {
+  .job, .bgts > div { grid-template-columns: minmax(0, 1fr); row-gap: 2px; }
+}
+@media print {
+  :root { --lab: 74pt; }
+  .job, .bgts > div { column-gap: 12pt; }
+}
